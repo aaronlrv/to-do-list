@@ -1,19 +1,14 @@
-console.log("Hello World!")
+import todolist from "./list";
 
-class todolist {
-    constructor (taskName, taskDate, taskPriorty  ) {
-        this.taskName = taskName
-        this.taskDate = taskDate
-        this.priority = taskPriorty
 
-    }
-     displayTask (){
-        console.log(this.taskName)
-        console.log(this.taskDate)
-        console.log(this.priority)
-    }
+let taskName = window.prompt("Whats your task!")
+let taskDate = window.prompt("When is this task due?")
+let taskPriority = window.prompt("How important is this task?")
 
-}
 
-let firstTask = new todolist ("talk to her", "04/02/06", "high")
-firstTask.displayTask()
+let task = new todolist (taskName, taskDate, taskPriority)
+task.displayTask()
+
+console.log(task)
+
+

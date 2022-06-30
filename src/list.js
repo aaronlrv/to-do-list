@@ -1,4 +1,3 @@
-let list = (() => { 
 class todolist {
     constructor (taskName, taskDate, taskPriorty  ) {
         this.taskName = taskName
@@ -12,9 +11,9 @@ class todolist {
         console.log(this.priority)
     }
 
-}})
+}
 
-export default list
+export default todolist
 
 
 
