@@ -9,8 +9,6 @@ body,html{
     height: 100vh;
 }
 
-
-
 div {
     border: 1px solid blue;
 }
@@ -28,8 +26,12 @@ div {
     grid-column-end: 3;
   }
 
-  .header, .footer{
+  .header, .footer, .todolist{
     height: 100%;
     width: 100%;
   }
   
+  nav{
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
