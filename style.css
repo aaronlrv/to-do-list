@@ -26,7 +26,7 @@ div {
     grid-column-end: 3;
   }
 
-  .header, .footer, .todolist{
+  .header, .footer, .todolist, .sidebar{
     height: 100%;
     width: 100%;
   }
