@@ -13,7 +13,6 @@ main{
     height: 100vh;
 }
 
-
 div {
     border: 1px solid blue;
 }
@@ -26,12 +25,12 @@ div {
     height: 100%;
   }
 
-  header{
+  header, footer{
     grid-column-start: 1;
     grid-column-end: 3;
   }
 
-  .header{
+  .header, .footer{
     height: 100%;
     width: 100%;
   }
