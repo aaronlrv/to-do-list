@@ -26,5 +26,13 @@ div {
     height: 100%;
   }
 
+  header{
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 
+  .header{
+    height: 100%;
+    width: 100%;
+  }
   
