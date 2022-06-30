@@ -1,5 +1,4 @@
-console.log("Hello World!")
-
+let list = (() => { 
 class todolist {
     constructor (taskName, taskDate, taskPriorty  ) {
         this.taskName = taskName
@@ -13,7 +12,9 @@ class todolist {
         console.log(this.priority)
     }
 
-}
+}})
 
-let firstTask = new todolist ("talk to her", "04/02/06", "high")
-firstTask.displayTask()
+export default list
+
+
+
