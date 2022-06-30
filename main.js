@@ -1,1 +1,1 @@
-console.log("Hello World!");
+(()=>{"use strict";let s=new class{constructor(s,t,o){this.taskName=s,this.taskDate=t,this.priority=o}displayTask(){console.log(this.taskName),console.log(this.taskDate),console.log(this.priority)}}(window.prompt("Whats your task!"),window.prompt("When is this task due?"),window.prompt("How important is this task?"));s.displayTask(),console.log(s)})();
