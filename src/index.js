@@ -22,7 +22,7 @@ let task2 = new todolist (taskName2, taskDate2, taskPriority2)
 
 
 if (projects[projectsName] === projectsname2) {
-    projects[projectsName] =  projects[projectsName].push(task2)
+    projects[projectsName].push(task2)
   } 
 
     if  (!(projectsname2 in projects)) {
@@ -32,6 +32,7 @@ if (projects[projectsName] === projectsname2) {
   projects[projectsname2].push(task2)
   
   console.log(projects[projectsName])
+  console.log(projects[projectsname2])
 
 console.log(projects)
 
