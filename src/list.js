@@ -5,11 +5,10 @@ class todolist {
         this.priority = taskPriorty
 
     }
-     displayTask (){
-        console.log(this.taskName)
-        console.log(this.taskDate)
-        console.log(this.priority)
+     projects (){
+        console.log("projects function that im not sure what to do with cause i am lonely and depressed and I dont really have any friends that cares or symphatizes or emphatizes with me and instead im just left with manic depression.")
     }
+    
 
 }
 
