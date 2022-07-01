@@ -1,10 +1,10 @@
 import todolist from "./list";
 
+let projectsName = window.prompt("Whats your project name")
 let taskName = window.prompt("Whats your task!")
 let taskDate = window.prompt("When is this task due?")
 let taskPriority = window.prompt("How important is this task?")
 
-let projectsName = window.prompt("Whats your project name")
 let task = new todolist (taskName, taskDate, taskPriority)
 
 let projects = [
@@ -13,7 +13,6 @@ let projects = [
 
 
 
-task.projects()
 console.log(projects)
 
 
