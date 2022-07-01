@@ -7,18 +7,33 @@ let taskPriority = window.prompt("How important is this task?")
 
 let task = new todolist (taskName, taskDate, taskPriority)
 
-let projects = [
-    {[projectsName]:[task]}
-]
+let projects= {
+    [projectsName] :[task]
+    
+}
+
+let projectname2 = "Asdfg"
+
+if (projects[projectsName] === projectname2) {
+    projects[projectsName] =  projects[projectsName].push(task)
+  } 
+
+    if (!projectname2 in projects) {
+        projects[projectsname2] = []
+  }
+
+  projects[projectsname2].push(task2)
+  
+
+
+  
+
 
 
 
 console.log(projects)
 
 
-/// for tommorow figure out a way to 
-/// append the task to make it a part of the project name
-/// as for right now theyre seperate properties
 
 
 /*
