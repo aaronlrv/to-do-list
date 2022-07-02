@@ -42,6 +42,21 @@ div {
   border-radius: 2px;
 }
 
+.sidebar{
+  background-color: #818cf8;
+}
+
+.projects-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-header p{
+  color: black;
+  font-size: 30px;
+
+}
 
 .header p {
   color: white;
