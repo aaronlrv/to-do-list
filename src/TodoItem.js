@@ -10,10 +10,13 @@ class TodoItem {
 
     }
     
+    return {
+        TodoItem
+    }
 
 }
 
-export default todolist
+export default TodoItem
 
 
 
