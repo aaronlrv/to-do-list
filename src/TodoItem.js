@@ -6,7 +6,8 @@ class TodoItem {
 
     }
      toString (){
-        
+        return `Task Name: ${this.taskName}, Due Date: ${this.taskDate} Priority: ${this.priority}`
+
     }
     
 
