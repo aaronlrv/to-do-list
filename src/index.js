@@ -7,7 +7,7 @@ let taskPriority = window.prompt("How important is this task?")
 let div = document.querySelector(".project1")
 let taskNameDiv = document.querySelector(".task-name")
 let taskDateDiv = document.querySelector(".due-date")
-let taskPriorityDiv = document.querySelector("priority")
+let taskPriorityDiv = document.querySelector(".priority")
 
 let task = new TodoItem (taskName, taskDate, taskPriority)
 
