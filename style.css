@@ -10,10 +10,10 @@ body,html{
     height: 100vh;
 }
 
-
-div {
+div{
   border: 1px solid blue;
 }
+
 
 .container {  
     display: grid;
@@ -44,6 +44,15 @@ div {
 
 .sidebar{
   background-color: #c7d2fe;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar-content{
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
 }
 
 .projects-header{
