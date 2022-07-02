@@ -12,7 +12,6 @@ let projects= {
     
 }
 
-
 let projectsname2 = window.prompt("Whats your project name")
 let taskName2 = window.prompt("Whats your task!")
 let taskDate2 = window.prompt("When is this task due?")
@@ -38,6 +37,16 @@ console.log(projects)
 
 
 
+/// start working on ui tommorow
+
+
+
+
+
+
+
+
+
 
 /*
 projects: {
@@ -47,5 +56,3 @@ projects: {
 
 order: ['id', 'id2']
 */
-
-
