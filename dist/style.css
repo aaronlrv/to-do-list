@@ -77,9 +77,6 @@ body,html{
   border-radius: 5px;
 }
 
-
-
-
 .header p {
   color: white;
   font-size: 80px;
@@ -104,7 +101,12 @@ main{
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
 
+.task-group :hover{
+  background-color:  #eef2ff;
+  border: 1px solid gray;
+  border-radius: 5px;
 }
 
 .footer{
