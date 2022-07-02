@@ -1,5 +1,4 @@
 import TodoItem from "./TodoItem";
-
 let projectsName = window.prompt("Whats your project name")
 let taskName = window.prompt("Whats your task!")
 let taskDate = window.prompt("When is this task due?")
@@ -7,8 +6,9 @@ let taskPriority = window.prompt("How important is this task?")
 let taskNameDiv = document.querySelector(".task-name")
 let taskDateDiv = document.querySelector(".due-date")
 let taskPriorityDiv = document.querySelector(".priority")
-let projectsDiv = document.querySelector(".project1")
 let projectsContainer = document.querySelector(".projects")
+let taskBtn = document.getElementById("taskBtn")
+let projectBtn = document.getElementById("projectBtn")
 
 let task = new TodoItem (taskName, taskDate, taskPriority)
 
@@ -54,6 +54,18 @@ for (let i = 0; i < projectName.length; i++) {
   projectDiv.textContent = projectName[i]
   
 }
+
+taskBtn.addEventListener("click", (e) => {
+  console.log(e)
+  console.log(e.target)
+})
+
+projectBtn.addEventListener("click", (e) => {
+  console.log(e)
+  console.log(e.target)
+})
+
+
 
 /// start working on ui tommorow
 
