@@ -45,4 +45,7 @@ div {
 .header p {
   color: white;
   font-size: 80px;
+  font-family: 'JelleeBold';
+  font-weight: normal;
+  font-style: normal;
 }
