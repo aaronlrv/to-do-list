@@ -109,6 +109,11 @@ main{
   border-radius: 5px;
 }
 
+.task{
+  display:flex;
+  justify-content: space-evenly
+}
+
 .footer{
   background-color: #0f172a;
   display: flex;
