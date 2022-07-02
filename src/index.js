@@ -61,9 +61,19 @@ taskBtn.addEventListener("click", (e) => {
 })
 
 projectBtn.addEventListener("click", (e) => {
-  console.log(e)
-  console.log(e.target)
-})
+  let projectsname2 = window.prompt("Whats your project name")
+  projectName.push(projectsname2)
+  console.log(projectName)
+  projectsContainer.textContent = ""
+
+  for (let i = 0; i < projectName.length; i++) {
+    console.log(projectName[i])
+    let projectDiv = document.createElement("div")
+    projectsContainer.append(projectDiv)
+    projectDiv.textContent = projectName[i]
+  }})
+
+
 
 
 
