@@ -10,9 +10,7 @@ body,html{
     height: 100vh;
 }
 
-div{
-  border: 1px solid blue;
-}
+
 
 
 .container {  
@@ -66,6 +64,21 @@ div{
   font-size: 30px;
 
 }
+
+.projects{
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.projects :hover{
+  background-color:  #e0e7ff;
+  border: 2px solid gray;
+  border-radius: 5px;
+}
+
+
+
 
 .header p {
   color: white;
