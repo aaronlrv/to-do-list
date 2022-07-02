@@ -5,6 +5,9 @@ let taskName = window.prompt("Whats your task!")
 let taskDate = window.prompt("When is this task due?")
 let taskPriority = window.prompt("How important is this task?")
 let div = document.querySelector(".project1")
+let taskNameDiv = document.querySelector(".task-name")
+let taskDateDiv = document.querySelector(".due-date")
+let taskPriorityDiv = document.querySelector("priority")
 
 let task = new TodoItem (taskName, taskDate, taskPriority)
 
@@ -12,10 +15,6 @@ let projects = {
     [projectsName] :[task]
     
 }
-
-
-console.log(taskText)
-taskDiv.textContent = 
 
 let projectsname2 = window.prompt("Whats your project name")
 let taskName2 = window.prompt("Whats your task!")
