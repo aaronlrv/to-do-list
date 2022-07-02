@@ -1,23 +1,27 @@
-import todolist from "./list";
+import TodoItem from "./TodoItem";
 
 let projectsName = window.prompt("Whats your project name")
 let taskName = window.prompt("Whats your task!")
 let taskDate = window.prompt("When is this task due?")
 let taskPriority = window.prompt("How important is this task?")
+let div = document.querySelector(".project1")
 
-let task = new todolist (taskName, taskDate, taskPriority)
+let task = new TodoItem (taskName, taskDate, taskPriority)
 
-let projects= {
+let projects = {
     [projectsName] :[task]
     
 }
+
+console.log(todolist.toString())
+
 
 let projectsname2 = window.prompt("Whats your project name")
 let taskName2 = window.prompt("Whats your task!")
 let taskDate2 = window.prompt("When is this task due?")
 let taskPriority2 = window.prompt("How important is this task?")
 
-let task2 = new todolist (taskName2, taskDate2, taskPriority2)
+let task2 = new TodoItem (taskName2, taskDate2, taskPriority2)
 
 
 if (projects[projectsName] === projectsname2) {

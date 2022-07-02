@@ -120,6 +120,17 @@ main{
   color: white;
 }
 
+.buttons{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.buttons button{
+  width: 100%;
+}
+
+
+
 button {
   position: relative;
   display: inline-block;
