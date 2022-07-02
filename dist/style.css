@@ -10,10 +10,10 @@ body,html{
     height: 100vh;
 }
 
+
 div {
   border: 1px solid blue;
 }
-
 
 .container {  
     display: grid;
@@ -64,4 +64,22 @@ div {
   font-family: 'JelleeBold';
   font-weight: normal;
   font-style: normal;
+}
+
+main{
+  background-color: #e0e7ff;
+}
+
+.task-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+.task-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
