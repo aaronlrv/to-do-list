@@ -3,10 +3,7 @@ let projectsName = window.prompt("Whats your project name")
 let taskName = window.prompt("Whats your task!")
 let taskDate = window.prompt("When is this task due?")
 let taskPriority = window.prompt("How important is this task?")
-let taskNameDiv = document.querySelector(".task-name")
-let taskDateDiv = document.querySelector(".due-date")
-let taskPriorityDiv = document.querySelector(".priority")
-let projectsContainer = document.querySelector(".projects")
+let taskGroup = document.querySelector(".task-group") 
 let taskBtn = document.getElementById("taskBtn")
 let projectBtn = document.getElementById("projectBtn")
 
@@ -17,9 +14,21 @@ let projects = {
     
 }
 
-taskNameDiv.textContent = task.taskName
-taskDateDiv.textContent =  task.taskDate
-taskPriorityDiv.textContent =  task.priority 
+let divTask = document.createElement("div")
+divTask.classList.add("task")
+taskGroup.append(divTask)
+
+let divTaskName = document.createElement("div")
+let divDueDate = document.createElement("div")
+let divPriority = document.createElement("div")
+
+divTask.append(divTaskName)
+divTask.append(divDueDate)
+divTask.append(divPriority)
+
+divTaskName.textContent = task.taskName
+divDueDate.textContent =  task.taskDate
+divPriority.textContent =  task.priority 
 
 let projectsname2 = window.prompt("Whats your project name")
 let taskName2 = window.prompt("Whats your task!")
@@ -56,8 +65,7 @@ for (let i = 0; i < projectName.length; i++) {
 }
 
 taskBtn.addEventListener("click", (e) => {
-  console.log(e)
-  console.log(e.target)
+
 })
 
 projectBtn.addEventListener("click", (e) => {
