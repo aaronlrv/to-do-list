@@ -16,6 +16,12 @@ let projects = {
     
 }
 
+
+taskNameDiv.textContent =  task.taskName
+taskDateDiv.textContent = task.taskDate
+taskPriorityDiv.textContent = task.priority
+
+
 let projectsname2 = window.prompt("Whats your project name")
 let taskName2 = window.prompt("Whats your task!")
 let taskDate2 = window.prompt("When is this task due?")
