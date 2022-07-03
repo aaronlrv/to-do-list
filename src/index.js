@@ -6,6 +6,7 @@ let taskPriority = window.prompt("How important is this task?")
 let taskGroup = document.querySelector(".task-group") 
 let taskBtn = document.getElementById("taskBtn")
 let projectBtn = document.getElementById("projectBtn")
+let projectsContainer = document.querySelector(".projects")
 
 let task = new TodoItem (taskName, taskDate, taskPriority)
 
