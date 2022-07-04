@@ -124,32 +124,38 @@ projectsdivdiv.addEventListener("click" , (e) => {
   console.log(projects[targetDiv.textContent])
   let taskArray = projects[targetDiv.textContent]
 
-  console.log(taskArray)
-  console.log(taskArray[0].taskName)
-  console.log(taskArray[0].taskDate)
-  console.log(taskArray[0].priority)
+  for (let i = 0; i < taskArray.length; i++) {
+    console.log(taskArray)
+    console.log(taskArray[i].taskName)
+    console.log(taskArray[i].taskDate)
+    console.log(taskArray[i].priority)
+  
+  }
 
 })
 
 
 
 
-projectsContainer.addEventListener("click", () => { 
+projectsContainer.addEventListener("click", (e) => { 
 let projectsAll2 = document.querySelectorAll(".projects > div")
-console.log(projectsAll2)
 
 let projectsAllArr = Array.from(projectsAll2)
-
-console.log(projectsAll2)
-console.log(projectsAllArr)
 
 projectsAllArr.shift()
 console.log(projectsAllArr)
 
 projectsAllArr.forEach(element => {
-  element.addEventListener("click", () => { 
-    for (let i = 0; i < projectsAllArr.length; i++) {
-      
+  element.addEventListener("click", (e) => { 
+    for (let i = 0; i <= projectsAllArr.length; i++) {
+      console.log(e.target)
+      let targetDiv = e.target
+      let taskArray = projects[targetDiv.textContent]
+      console.log(taskArray)
+      console.log(projects[projectsname2])  
+      console.log(taskArray[i].taskName)
+      console.log(taskArray[i].taskDate)
+      console.log(taskArray[i].priority)
     }
   
     })
