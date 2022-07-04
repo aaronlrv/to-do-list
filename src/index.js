@@ -131,6 +131,32 @@ projectsdivdiv.addEventListener("click" , (e) => {
 
 })
 
+
+
+
+projectsContainer.addEventListener("click", () => { 
+let projectsAll2 = document.querySelectorAll(".projects > div")
+console.log(projectsAll2)
+
+let projectsAllArr = Array.from(projectsAll2)
+
+console.log(projectsAll2)
+console.log(projectsAllArr)
+
+projectsAllArr.shift()
+console.log(projectsAllArr)
+
+projectsAllArr.forEach(element => {
+  element.addEventListener("click", () => { 
+    for (let i = 0; i < projectsAllArr.length; i++) {
+      
+    }
+  
+    })
+  
+});
+})
+
 /// start working on ui tommorow
 
 
