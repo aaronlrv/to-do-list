@@ -17,6 +17,7 @@ let projects = {
 
 let divTask = document.createElement("div")
 divTask.classList.add("task")
+divTask.id = "target"
 taskGroup.append(divTask)
 
 let divTaskName = document.createElement("div")
@@ -113,8 +114,22 @@ projectBtn.addEventListener("click", (e) => {
 
 })
 
+let projectsdivdiv = projectsContainer.firstElementChild
+console.log(projectsdivdiv)
 
+projectsdivdiv.addEventListener("click" , (e) => {
+  let targetDiv = e.target
+  console.log(targetDiv)
+  console.log(targetDiv.textContent)
+  console.log(projects[targetDiv.textContent])
+  let taskArray = projects[targetDiv.textContent]
 
+  console.log(taskArray)
+  console.log(taskArray[0].taskName)
+  console.log(taskArray[0].taskDate)
+  console.log(taskArray[0].priority)
+
+})
 
 /// start working on ui tommorow
 
