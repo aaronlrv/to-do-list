@@ -108,7 +108,12 @@ main{
 
 .task{
   display:flex;
-  justify-content: space-evenly
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+img{
+  height: 50px;
 }
 
 .footer{
