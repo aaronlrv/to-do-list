@@ -10,9 +10,6 @@ body,html{
     height: 100vh;
 }
 
-
-
-
 .container {  
     display: grid;
     grid-template-columns: 345px 1fr;

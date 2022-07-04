@@ -87,10 +87,12 @@ taskBtn.addEventListener("click", (e) => {
   divTaskName.textContent = task2.taskName
   divDueDate.textContent =  task2.taskDate
   divPriority.textContent =  task2.priority 
+  console.log(projects)
 })
 
 projectBtn.addEventListener("click", (e) => {
   let projectsname2 = window.prompt("Whats your project name")
+
   projectName.push(projectsname2)
   console.log(projectName)
   projectsContainer.textContent = ""
@@ -102,10 +104,13 @@ projectBtn.addEventListener("click", (e) => {
     projectDiv.textContent = projectName[i]
   }})
 
+  divTask.addEventListener("click", () => {
+      console.log("This click works!")
+      let img = document.createElement("img")
+      divTask.append(img)
+      img.src = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNzUycHQiIGhlaWdodD0iNzUycHQiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDc1MiA3NTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiA8cGF0aCBkPSJtMzc1LjcyIDE1MC4zOWMxMjQuNjggMCAyMjUuODkgMTAwLjY0IDIyNS44OSAyMjUuMzNzLTEwMS4yIDIyNS44OS0yMjUuODkgMjI1Ljg5LTIyNS4zMy0xMDEuMi0yMjUuMzMtMjI1Ljg5IDEwMC42NC0yMjUuMzMgMjI1LjMzLTIyNS4zM3ptMCAxODEuMTYgNjMuNzQyLTYzLjc0MmMyOS4wNzQtMjkuMDc0IDczLjgwNSAxNS4wOTggNDQuNzMgNDQuMTcybC02My43NDIgNjMuNzQyIDYzLjc0MiA2My43NDJjMjkuMDc0IDI5LjA3NC0xNS42NTYgNzMuODA1LTQ0LjczIDQ0LjczbC02My43NDItNjMuNzQyLTYzLjc0MiA2My43NDJjLTI5LjA3NCAyOS4wNzQtNzMuMjQ2LTE1LjY1Ni00NC4xNzItNDQuNzNsNjMuNzQyLTYzLjc0Mi02My43NDItNjMuNzQyYy0yOS4wNzQtMjkuMDc0IDE1LjA5OC03My4yNDYgNDQuMTcyLTQ0LjE3MnoiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPgo8L3N2Zz4K"
 
-
-
-
+  })
 /// start working on ui tommorow
 
 
