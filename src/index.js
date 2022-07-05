@@ -123,11 +123,11 @@ projectsdivdiv.addEventListener("click" , (e) => {
   console.log(targetDiv.textContent)
   console.log(projects[targetDiv.textContent])
   let taskArray = projects[targetDiv.textContent]
+  taskGroup.textContent = " "
 
   let taskContainer = document.querySelector(".task")
 
 
-  taskContainer.remove()
 
 
   for (let i = 0; i < taskArray.length; i++) {
