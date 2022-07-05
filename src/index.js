@@ -111,13 +111,6 @@ projectBtn.addEventListener("click", (e) => {
     projectDiv.textContent = projectName[i]
   }})
 
-  divTask.addEventListener("click", (e) => {
-    console.log(e)
-    console.log(e.target)
-    let targetDiv = e.target
-    targetDiv.remove()
-
-})
 
 // add tasks to dom for first project only
 
@@ -216,6 +209,12 @@ projectsAllArr.forEach(element => {
 });
 
 
+taskGroup.addEventListener("click", (e) => {
+  let allTasks = document.querySelectorAll(".task")
+  console.log(e)
+  console.log(e.target)
+  console.log(allTasks)
+})
 /// start working on ui tommorow
 
 
