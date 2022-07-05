@@ -173,6 +173,8 @@ projectsAllArr.forEach(element => {
     let targetDiv = e.target
     let taskArray = projects[targetDiv.textContent]
     console.log(taskArray)
+    taskGroup.textContent = " "
+
 
     for (let i = 0; i < taskArray.length; i++) {
       console.log(taskArray)
@@ -180,6 +182,22 @@ projectsAllArr.forEach(element => {
       console.log(taskArray[i].taskDate)
       console.log(taskArray[i].priority)
       
+      let divTask = document.createElement("div")
+      divTask.classList.add("task")
+      divTask.id = "target"
+      taskGroup.append(divTask)
+    
+      let divTaskName = document.createElement("div")
+      let divDueDate = document.createElement("div")
+      let divPriority = document.createElement("div")
+    
+      divTask.append(divTaskName)
+      divTask.append(divDueDate)
+      divTask.append(divPriority)
+  
+      divTaskName.textContent = taskArray[i].taskName
+      divDueDate.textContent =  taskArray[i].taskDate
+      divPriority.textContent =  taskArray[i].priority
 
 
     }
