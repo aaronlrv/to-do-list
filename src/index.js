@@ -14,7 +14,7 @@ let projects = {
     [projectsName] :[task]
     
 }
-
+/// task creation process
 let divTask = document.createElement("div")
 divTask.classList.add("task")
 divTask.id = "target"
@@ -39,7 +39,7 @@ let taskPriority2 = window.prompt("How important is this task?")
 
 let task2 = new TodoItem (taskName2, taskDate2, taskPriority2)
 
-
+/// conditional for tasks with duplicate project names
 if (projects[projectsName] === projectsname2) {
     projects[projectsName].push(task2)
   } 
@@ -66,6 +66,7 @@ for (let i = 0; i < projectName.length; i++) {
   
 }
 
+/// adds tasks 
 taskBtn.addEventListener("click", (e) => {
   let taskName2 = window.prompt("Whats your task!")
   let taskDate2 = window.prompt("When is this task due?")
@@ -92,6 +93,7 @@ taskBtn.addEventListener("click", (e) => {
 
 })
 
+/// adds projects
 projectBtn.addEventListener("click", (e) => {
   let projectsname2 = window.prompt("Whats your project name")
 
@@ -113,6 +115,8 @@ projectBtn.addEventListener("click", (e) => {
     targetDiv.remove()
 
 })
+
+// add tasks to dom for first project only
 
 let projectsdivdiv = projectsContainer.firstElementChild
 console.log(projectsdivdiv)
@@ -158,7 +162,8 @@ projectsdivdiv.addEventListener("click" , (e) => {
 })
 
 
-
+/// selects every project besides the first 
+///adds tasks to dom on click
 
 projectsContainer.addEventListener("click", (e) => { 
 let projectsAll2 = document.querySelectorAll(".projects > div")
