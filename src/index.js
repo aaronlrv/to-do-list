@@ -214,6 +214,9 @@ taskGroup.addEventListener("click", (e) => {
   console.log(e)
   console.log(e.target)
   console.log(allTasks)
+  let targetTask = e.target
+  let taskName = targetTask.firstElementChild.textContent
+  console.log(taskName)
 })
 /// start working on ui tommorow
 
