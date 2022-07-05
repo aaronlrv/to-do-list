@@ -211,13 +211,20 @@ projectsAllArr.forEach(element => {
 
 taskGroup.addEventListener("click", (e) => {
   let allTasks = document.querySelectorAll(".task")
-  console.log(e)
   console.log(e.target)
-  console.log(allTasks)
   let targetTask = e.target
   let taskName = targetTask.firstElementChild.textContent
   console.log(taskName)
+
+  function filter (task) {
+    return task.taskName !== taskName
+  }
+
+  let filteredArray = projects[projectsName].filter(filter)
+  console.log(filteredArray)
 })
+
+
 /// start working on ui tommorow
 
 
