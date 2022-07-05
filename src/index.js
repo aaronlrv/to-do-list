@@ -7,6 +7,7 @@ let taskGroup = document.querySelector(".task-group")
 let taskBtn = document.getElementById("taskBtn")
 let projectBtn = document.getElementById("projectBtn")
 let projectsContainer = document.querySelector(".projects")
+let saveBtn = document.getElementById("saveBtn")
 
 let task = new TodoItem (taskName, taskDate, taskPriority)
 
@@ -109,6 +110,7 @@ projectBtn.addEventListener("click", (e) => {
     let projectDiv = document.createElement("div")
     projectsContainer.append(projectDiv)
     projectDiv.textContent = projectName[i]
+
   }})
 
 
@@ -222,7 +224,44 @@ taskGroup.addEventListener("click", (e) => {
 
   let filteredArray = projects[projectsName].filter(filter)
   console.log(filteredArray)
+
+  taskGroup.textContent = " "
+
+  for (let i = 0; i < filteredArray.length; i++) {
+    console.log(filteredArray)
+    console.log(filteredArray[i].taskName)
+    console.log(filteredArray[i].taskDate)
+    console.log(filteredArray[i].priority)
+    
+    let divTask = document.createElement("div")
+    divTask.classList.add("task")
+    divTask.id = "target"
+    taskGroup.append(divTask)
+  
+    let divTaskName = document.createElement("div")
+    let divDueDate = document.createElement("div")
+    let divPriority = document.createElement("div")
+  
+    divTask.append(divTaskName)
+    divTask.append(divDueDate)
+    divTask.append(divPriority)
+
+    divTaskName.textContent = filteredArray[i].taskName
+    divDueDate.textContent =  filteredArray[i].taskDate
+    divPriority.textContent =  filteredArray[i].priority
+
+  }
 })
+
+saveBtn.addEventListener("click", () => { 
+localStorage.clear()
+let stringify = JSON.stringify(projects)
+console.log(stringify)
+
+localStorage.setItem("projects", stringify)
+})
+
+
 
 
 /// start working on ui tommorow
