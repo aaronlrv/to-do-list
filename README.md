@@ -12,7 +12,7 @@ This project was a immense challenge to construct due to all the features and be
 
 ## How to Use
 
-Use the Github pages environment and view the latest deployment of the project (Note: If it gets stuck on computer turn feel free to refresh the page!) 
+Use the Github pages environment and view the latest deployment of the project or use this live repo link https://aaronlrv.github.io/to-do-list/
 
 ## Tech/ Framework Used
 <p align="left"> 
